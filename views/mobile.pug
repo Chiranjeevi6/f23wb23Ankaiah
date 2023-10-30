@@ -23,7 +23,9 @@ block content
   div(class = "container-fluid")
     div(class = "row")
       each item,index in results
-        div(class = "col-sm-2" onclick = `buy (${index})`) Brand : #{mobile_brand}
-        div(class = "col-sm-2" onclick = `buy (${index})`) Brand : #{mobile_specification}
-        div(class = "col-sm-2" onclick = `buy (${index})`) Brand : #{mobile_cost}
+        div(class = "col-sm-2" onclick = `buy (${index})`) Brand : #{item.mobile_brand}
+        div(class = "col-sm-2" onclick = `buy (${index})`) Specification : #{item.mobile_specification}
+        div(class = "col-sm-2" onclick = `buy (${index})`) Cost : #{item.mobile_cost}
+        br
+        br
   -
